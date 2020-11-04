@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height:auto;
+    background: rgb(24, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Navbar*/
+.navbar{
+    top:0;
+    position: fixed;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between ;
+    background-color:rgb(32,32,32);
+    width: 100%;
+    height: 56px;
+}
+
+.navbar div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.logostuff{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logostuff div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoimage img{
+    width: 80px;
+    height: 24px;
+}
+
+.searchform{
+    padding:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.searchform div{
+    margin: 0;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+}
+
+input{
+    width: 573px;
+    height: 30px;
+    background-color: #131313;;
+    border: 1px solid #323232;
+    color: white;
+    font-size: 15px;
+}
+
+.button{
+    background-color:rgb(50, 50, 50);
+    height: 30px;
+    width: 66px;
+    border: none;
+    cursor: pointer;
+}
+
+.button div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userinfo div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.userimage{
+    width: 30px;
+    height: 30px;
+}
+.userimage img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+/*Container for content*/
+.container{
+    height: 100%;
+    margin: 70px 65px 24px 65px;
+}
+/*Main video area*/
+.main_video_area{
+    float: left;
+    width: 66%;
+}
+.main_video_area iframe{
+    width: 100%;
+    height: 650.417px;
+}
+
+.info_for_video{
+    margin-top: 14.5px ;
+}
+
+
+.tags{
+    color: #3ea6ff;;
+    font-size: 15px;
+}
+.tags a{
+    text-decoration: none;
+}
+
+.title{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-size:14px;
+    padding-top: 14.5px;
+    
+}
+.likes_and_share{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.likes{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 14.5px;
+    border-bottom: 2px solid #aaaaaa;
+    margin-right:24px;
+}
+
+.share{
+    display: flex;
+    flex-direction: row;
+    margin-right:24px;
+}
+.save{
+    display: flex;
+    flex-direction: row;
+    margin-right:24px;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    margin-right:24px;
+}
+
+.like,.dislike{
+    display: flex;
+    flex-direction: row;
+}
+
+.like img{
+    margin-left: 5px;
+}
+.like img, .dislike img,.share img, .save img, .more{
+    margin-right: 5px;
+}
+.dislike p{
+    margin-right: 5px;
+}
+.like{
+    margin-right: 6px;
+}
+.dislike{
+    margin-left: 6px;
+}
+
+.likes_and_share img{
+    width: 20px;
+    height: 20px;
+}
+.youtubeaccount{
+    border-top: 1px solid rgb(255, 255, 255,0.1);;
+    border-bottom: 1px solid rgb(255, 255, 255,0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accountinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.accountimage img{
+    border-radius: 50%;
+}
+
+.accountname_subscribers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#Name{
+    color: white;
+    font-size: 14px;
+}
+#subscribers{
+    color:#aaaaaa;
+    font-size: 13px;
+}
+#Description{
+    width: 43%;
+    margin-top: 10px;
+    font-size: 14px;
+    color:white;
+}
+#Showmore{
+    margin-top: 10px;
+    color:#aaaaaa;
+    font-size: 12px;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.sub_button{
+    background-color: red;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+/*Recommended videos*/
+
+.recommnendec_videos{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    margin-top: 5px;
+
+
+}
+
+.up_nextvideo{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255,0.1);
+}
+
+
+.upnext_button{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.thumbnail img{
+    width: 168px;
+    height: 94px;
+}
+
+.video{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.video_stats{
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+#vid_title{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.more_vids{
+    margin-top: 10px;
+}
+/*Comment Section*/
+.comments-section{
+    float: left;
+    width: 66%;
+}
+.comments_stats{
+    display: flex;
+    color: white;
+ 
+    list-style: none;
+}
+.numbercom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+.sortby{
+    display: flex;
+    justify-content: row;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+.sortby p{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sortby img{
+    width: 24px;
+    height: 47px;
+}
+
+.addcomment{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.addcomment img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#commentinput{
+    background-color:rgb(24, 24, 24);
+    border:none;
+    border-bottom: 1px solid #323232;
+    width: 100%;
+}
+
+.comments{
+    margin-top: 40px;
+}
+
+.pinned_comment{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: white;
+}
+
+.op_poster div{
+    display: flex;
+    flex-direction: row;
+}
+
+#OPimg{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.pin{
+    font-size: 13px;
+    color:#aaaaaa;
+}
+.op{
+    font-size: 13px;
+    color: #aaaaaa;
+}
+#youtuber_name{
+    width: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #aaaaaa;
+    margin-right: 8px;
+    text-align: center;
+}
+.commentlikes{
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+#Com{
+    width: 20px;
+    height: 16px;
+    margin-right: 5px;
+}
+.commentlikes p{
+    margin-right: 5px;
+}
+
+.comment{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: white;
+}
+
+#name{
+    color: white;
+}
+
+#time{
+    margin-left: 8px;
+}
